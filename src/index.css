@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+@import "tailwindcss";
+
+/* Paleta CMYK - New Print */
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  /* Cores principais */
+  --color-chumbo: #1a1a1a;
+  --color-cmyk-cyan: #00aeef;
+  --color-cmyk-magenta: #ec008c;
+  --color-cmyk-yellow: #fff200;
+  --color-cmyk-black: #000000;
+  /* Compatibilidade com componentes existentes */
+  --color-primary: #fff200;
+  --color-primary-hover: #e6d900;
+  --color-dark: #1a1a1a;
+  --color-darker: #000000;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    background: #fff;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Barra de calibração CMYK entre seções */
+.calibration-bar {
+  display: flex;
+  height: 4px;
+  width: 100%;
+}
+.calibration-bar > span {
+  flex: 1;
+}
+.calibration-bar .c { background: #00aeef; }
+.calibration-bar .m { background: #ec008c; }
+.calibration-bar .y { background: #fff200; }
+.calibration-bar .k { background: #000000; }
