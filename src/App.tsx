@@ -44,7 +44,7 @@ const Navbar = () => {
             {/* Logo */}
             <a href="#início" className="flex items-center">
               <img
-                src="/logo-newprint.png"
+                src={`${import.meta.env.BASE_URL}logo-newprint.png`}
                 alt="New Print - Soluções em Impressão"
                 className="h-32 sm:h-36 md:h-40 w-auto object-contain"
               />
@@ -224,7 +224,7 @@ const Hero = () => {
               <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl border-2 border-[#EC008C]/30" />
               <div className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-none lg:w-[500px] aspect-[3/4] rounded-2xl overflow-hidden relative z-10">
                 <img
-                  src="/hero-inicio.png"
+                  src={`${import.meta.env.BASE_URL}hero-inicio.png`}
                   alt="Técnico New Print - Soluções em Impressão"
                   className="w-full h-full object-cover"
                 />
@@ -270,7 +270,7 @@ const Brands = () => (
               aria-label={`Site ${nome}`}
             >
               <img
-                src={`/marcas/${slug}.png`}
+                src={`${import.meta.env.BASE_URL}marcas/${slug}.png`}
                 alt={`Logo ${nome}`}
                 title={nome}
                 className={`max-h-full max-w-full w-auto object-contain object-top ${slug === 'hp' ? '' : slug === 'canon' ? 'mt-[33px]' : slug === 'epson' ? 'mt-[18px]' : 'mt-[30px]'}`}
@@ -316,7 +316,7 @@ const About = () => (
           <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl border-2 border-[#EC008C]/30" />
           <div className="relative z-10 rounded-2xl overflow-hidden">
             <img
-              src="/sobre-nos.png"
+              src={`${import.meta.env.BASE_URL}sobre-nos.png`}
               alt="Sobre a New Print - Nossa estrutura"
               className="w-full aspect-[4/5] object-cover"
             />
@@ -832,7 +832,7 @@ const Footer = () => (
         <div className="space-y-6 flex flex-col items-start pt-1">
           <a href="#início" className="-ml-2">
             <img
-              src="/logo-newprint.png"
+              src={`${import.meta.env.BASE_URL}logo-newprint.png`}
               alt="New Print - Soluções em Impressão"
               className="h-36 w-auto object-contain brightness-0 invert"
             />
